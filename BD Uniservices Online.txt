@@ -35,6 +35,7 @@ idUsuario int primary key auto_increment,
 nombreCompleto varchar (50) not null,
 user varchar (50) not null,
 pass varchar (60) not null,
+token varchar(600) default ´0´,
 nivel varchar (1) not null,
 estadoU varchar (1) not null,
 observacionesC varchar (200) not null
