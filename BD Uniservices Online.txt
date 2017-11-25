@@ -1,5 +1,5 @@
-create database uniserv_BD
-use uniservices;
+create database uniserv_BD;
+use uniserv_BD;
 
 create table afiliados(
 idAfiliado int primary key auto_increment,
@@ -19,7 +19,7 @@ apellidosC varchar (50) not null,
 cedulaC varchar (16) not null,
 telefonoC varchar (8) not null,
 correoC varchar (50) not null,
-estadoC bvarchar (1) not null,
+estadoC varchar (1) not null,
 observacionesC varchar (200) not null
 )Engine=InnoDB;
 
@@ -33,9 +33,10 @@ observacionesC varchar (200) not null
 create table usuarios(
 idUsuario int primary key auto_increment,
 nombreCompleto varchar (50) not null,
+email varchar(50) not null,
 user varchar (50) not null,
 pass varchar (60) not null,
-token varchar(600) default ´0´,
+token varchar(600) default '0',
 nivel varchar (1) not null,
 estadoU varchar (1) not null,
 observacionesC varchar (200) not null
@@ -43,29 +44,33 @@ observacionesC varchar (200) not null
 
 create table servicios(
 idServicio int primary key auto_increment,
-idCategoria int not null foreign key references categorias(idCategoria),
-idAfiliado int not null foreign key references afiliados(idAfiliado),
 DescripcionServicio varchar (100) not null,
+idCategoria int not null,
+idAfiliado int not null,
 estadoS varchar (1) not null,
-observacionesC varchar (200) not null
+observacionesC varchar (200) not null,
+FOREIGN KEY (idCategoria) REFERENCES categorias(idCategoria),
+FOREIGN KEY (idAfiliado) REFERENCES afiliados(idAfiliado)
 )Engine=InnoDB;
 
 create table afiliacion(
 idAfiliacion int primary key auto_increment,
-idAfiliado int not null foreign key references afiliados(idAfiliado),
+idAfiliado int not null,
 fechaAfiliacion date not null,
 CostoAfiliacion int not null,
 DescripcionAfiliacion varchar (100) not null,
 estadoA varchar (1) not null,
-observacionesC varchar (200) not null
+observacionesC varchar (200) not null,
+FOREIGN KEY (idAfiliado) REFERENCES afiliados(idAfiliado)
 )Engine=InnoDB;
 
 create table SolicitudServicio(
 idSolicitud int primary key auto_increment,
-idCliente int not null foreign key references clientes(idCliente),
+idCliente int not null,
 fechaSolicitud datetime not null,
 estadoA varchar (1) not null,
-observacionesC varchar (200) not null
+observaciones varchar (200) not null,
+FOREIGN KEY (idCliente) REFERENCES clientes(idCliente)
 )Engine=InnoDB;
 
 
