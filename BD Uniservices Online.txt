@@ -30,6 +30,15 @@ estado varchar (1) not null,
 observacionesC varchar (200) not null
 )Engine=InnoDB;
 
+create table subcategorias(
+idSubcategoria int primary key auto_increment,
+idCategoria int not null,
+nombreSubcategoria varchar (50) not null,
+estado varchar (1) not null,
+observacionesC varchar (200) not null,
+FOREIGN KEY (idCategoria) REFERENCES categorias(idCategoria),
+)Engine=InnoDB;
+
 create table usuarios(
 idUsuario int primary key auto_increment,
 nombreCompleto varchar (50) not null,
@@ -44,34 +53,43 @@ observacionesC varchar (200) not null
 
 create table servicios(
 idServicio int primary key auto_increment,
+NombreServicio varchar (100) not null,
 DescripcionServicio varchar (100) not null,
 idCategoria int not null,
-idAfiliado int not null,
+puntuacion float not null,
+precioBase float not null,
 estadoS varchar (1) not null,
 observacionesC varchar (200) not null,
-FOREIGN KEY (idCategoria) REFERENCES categorias(idCategoria),
-FOREIGN KEY (idAfiliado) REFERENCES afiliados(idAfiliado)
+FOREIGN KEY (idCategoria) REFERENCES categorias(idCategoria)
 )Engine=InnoDB;
 
 create table afiliacion(
 idAfiliacion int primary key auto_increment,
 idAfiliado int not null,
+idServicio int not null,
 fechaAfiliacion date not null,
 CostoAfiliacion int not null,
 DescripcionAfiliacion varchar (100) not null,
 estadoA varchar (1) not null,
 observacionesC varchar (200) not null,
-FOREIGN KEY (idAfiliado) REFERENCES afiliados(idAfiliado)
+FOREIGN KEY (idAfiliado) REFERENCES afiliados(idAfiliado),
+FOREIGN KEY (idServicio) REFERENCES servicios(idServicio)
 )Engine=InnoDB;
 
 create table SolicitudServicio(
 idSolicitud int primary key auto_increment,
+idServicio int not null,
 idCliente int not null,
 fechaSolicitud datetime not null,
 estadoA varchar (1) not null,
 observaciones varchar (200) not null,
+FOREIGN KEY (idServicio) REFERENCES servicios(idServicio),
 FOREIGN KEY (idCliente) REFERENCES clientes(idCliente)
 )Engine=InnoDB;
 
+creata table puntuaciones(
+idPuntuacion int primary key auto_increment,
+
+)Engine=InnoDB;
 
 
