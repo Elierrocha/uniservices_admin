@@ -14,6 +14,8 @@
     <script src="js/jquery.js"></script>
     <script src="js/back-to-top1.js"></script>
     <script src="js/bootstrap.js"></script>
+      <link href="css/sweetalert.css" rel="stylesheet">
+    <script src="js/sweetalert.min.js"></script>
 
 </head>
 <body>
@@ -28,7 +30,6 @@
                                <h2>Sistema Administrativo Uniservices</h2>                   
                         </div>
                         <div class="col-md-3">
-                      <img class="img-responsive img-circle" src="imagenes/logo.png" width="50px" height="50px">
                       <h5><i class="fa fa-circle fa-stack-1x fa-inverse" style="color:green; text-align: left; "></i><b> &nbsp; Online: </b>Juan Perez</h5>
                         </div> 
                 </div>
@@ -40,18 +41,18 @@
                          <div class="card">
                             <!--Imagen-->
                             <div class="view overlay hm-white-slight hm-zoom hoverable">
-                                <img src="imagenes/cliente.jpeg" class="img-fluid" alt="">
-                                <a href="#">
+                                <img src="imagenes/afiliados.jpg" class="img-fluid" alt="afiliados">
+                                <a href="admin/afiliados.php">
                                     <div class="mask waves-effect waves-light"></div>
                                 </a>
                             </div>
 
-                            <!--Contenido-->
+                            <!--Afiliados-->
                             <div class="card-body">
                                 <p class="cantidadRegistros">Total Registros: 34</p>
-                                <p class="card-text text-truncate">Mantenimientos de los clientes.</p>
+                                <p class="card-text text-truncate">Mantenimientos de los Afiliados.</p>
                                 <h5 class="card-title">Realizacion de todas las operaciones que se pueden realizar en un sistema</h5>
-                                <a href="#" class="btnHover botonNaranja">Ir al curso</a>
+                                <a href="admin/afiliados.php" class="btnHover botonNaranja">Ir ala Pagina</a>
                             </div>
                         </div>
                     </div> 
@@ -60,18 +61,18 @@
                          <div class="card">
                             <!--Imagen-->
                             <div class="view overlay hm-white-slight hm-zoom hoverable">
-                                <img src="imagenes/iconoUniservice.png" class="img-fluid" alt="">
-                                <a href="#">
+                                <img src="imagenes/clientes.jpg" class="img-fluid" alt="">
+                                <a href="admin/clientes.php">
                                     <div class="mask waves-effect waves-light"></div>
                                 </a>
                             </div>
 
-                            <!--Contenido-->
+                            <!--Clientes-->
                             <div class="card-body">
                                 <p class="cantidadRegistros">Total Registros: 34</p>
-                                <p class="card-text text-truncate">Mantenimientos de los clientes.</p>
+                                <p class="card-text text-truncate">Mantenimientos de los Clientes.</p>
                                 <h5 class="card-title">Realizacion de todas las operaciones que se pueden realizar en un sistema</h5>
-                                <a href="#" class="botonNaranja">Ir al curso</a>
+                                <a href="admin/clientes.php" class="botonNaranja">Ir ala Pagina</a>
                             </div>
                         </div>
                     </div> 
@@ -79,18 +80,18 @@
                          <div class="card">
                             <!--Imagen-->
                             <div class="view overlay hm-white-slight hm-zoom hoverable">
-                                <img src="imagenes/iconoUniservice.png" class="img-fluid" alt="">
-                                <a href="#">
+                                <img src="imagenes/clientes.jpg" class="img-fluid" alt="">
+                                <a href="admin/servicios.php">
                                     <div class="mask waves-effect waves-light"></div>
                                 </a>
                             </div>
 
-                            <!--Contenido-->
+                            <!--Servicios-->
                             <div class="card-body">
                                 <p class="cantidadRegistros">Total Registros: 34</p>
-                                <p class="card-text text-truncate">Mantenimientos de los clientes.</p>
+                                <p class="card-text text-truncate">Mantenimientos de los Servicios.</p>
                                 <h5 class="card-title">Realizacion de todas las operaciones que se pueden realizar en un sistema</h5>
-                                <a href="#" class="botonNaranja">Ir al curso</a>
+                                <a href="admin/servicios.php" class="botonNaranja">Ir ala Pagina</a>
                             </div>
                         </div>
                     </div> 
@@ -98,18 +99,18 @@
                          <div class="card">
                             <!--Imagen-->
                             <div class="view overlay hm-white-slight hm-zoom hoverable">
-                                <img src="imagenes/iconoUniservice.png" class="img-fluid" alt="">
+                                <img src="imagenes/categorias.jpg" class="img-fluid" alt="">
                                 <a href="#">
                                     <div class="mask waves-effect waves-light"></div>
                                 </a>
                             </div>
 
-                            <!--Contenido-->
+                            <!--categorias-->
                             <div class="card-body">
                                 <p class="cantidadRegistros">Total Registros: 34</p>
-                                <p class="card-text text-truncate">Mantenimientos de los clientes.</p>
+                                <p class="card-text text-truncate">Mantenimientos de las Categorias.</p>
                                 <h5 class="card-title">Realizacion de todas las operaciones que se pueden realizar en un sistema</h5>
-                                <a href="#" class="botonNaranja">Ir al curso</a>
+                                <a href="admin/categorias.php" class="botonNaranja">Ir a la Pagina</a>
                             </div>
                         </div>
                     </div> 
@@ -117,18 +118,18 @@
                          <div class="card">
                             <!--Imagen-->
                             <div class="view overlay hm-white-slight hm-zoom hoverable">
-                                <img src="imagenes/iconoUniservice.png" class="img-fluid" alt="">
-                                <a href="#">
+                                <img src="imagenes/estadisticas.jpg" class="img-fluid" alt="">
+                                <a href="admin/usuarios.php">
                                     <div class="mask waves-effect waves-light"></div>
                                 </a>
                             </div>
 
-                            <!--Contenido-->
+                            <!--usuarios-->
                             <div class="card-body">
                                 <p class="cantidadRegistros">Total Registros: 34</p>
-                                <p class="card-text text-truncate">Mantenimientos de los clientes.</p>
+                                <p class="card-text text-truncate">Mantenimientos de los Usuarios.</p>
                                 <h5 class="card-title">Realizacion de todas las operaciones que se pueden realizar en un sistema</h5>
-                                <a href="#" class="botonNaranja">Ir al curso</a>
+                                <a href="admin/usuarios.php" class="botonNaranja">Ir a la Pagina</a>
                             </div>
                         </div>
                     </div> 
@@ -136,18 +137,18 @@
                          <div class="card">
                             <!--Imagen-->
                             <div class="view overlay hm-white-slight hm-zoom hoverable">
-                                <img src="imagenes/iconoUniservice.png" class="img-fluid" alt="">
-                                <a href="#">
+                                <img src="imagenes/estadisticas.jpg" class="img-fluid" alt="">
+                                <a href="admin/estadisticas.php">
                                     <div class="mask waves-effect waves-light"></div>
                                 </a>
                             </div>
 
-                            <!--Contenido-->
+                            <!--Estadisticas-->
                             <div class="card-body">
                                 <p class="cantidadRegistros">Total Registros: 34</p>
-                                <p class="card-text text-truncate">Mantenimientos de los clientes.</p>
+                                <p class="card-text text-truncate">Estadisticas del Sistema.</p>
                                 <h5 class="card-title">Realizacion de todas las operaciones que se pueden realizar en un sistema</h5>
-                                <a href="#" class="botonNaranja">Ir al curso</a>
+                                <a href="admin/estadisticas.php" class="botonNaranja">Ir a la Pagina</a>
                             </div>
                         </div>
                     </div> 
@@ -155,18 +156,18 @@
                          <div class="card">
                             <!--Imagen-->
                             <div class="view overlay hm-white-slight hm-zoom hoverable">
-                                <img src="imagenes/iconoUniservice.png" class="img-fluid" alt="">
-                                <a href="#">
+                                <img src="imagenes/reportes.jpg" class="img-fluid" alt="">
+                                <a href="admin/reportes.php">
                                     <div class="mask waves-effect waves-light"></div>
                                 </a>
                             </div>
 
-                            <!--Contenido-->
+                            <!--Reportes-->
                             <div class="card-body">
                                 <p class="cantidadRegistros">Total Registros: 34</p>
-                                <p class="card-text text-truncate">Mantenimientos de los clientes.</p>
+                                <p class="card-text text-truncate">Reportes del Sistema.</p>
                                 <h5 class="card-title">Realizacion de todas las operaciones que se pueden realizar en un sistema</h5>
-                                <a href="#" class="botonNaranja">Ir al curso</a>
+                                <a href="admin/reportes.php" class="botonNaranja">Ir a la Pagina</a>
                             </div>
                         </div>
                     </div> 
@@ -175,18 +176,18 @@
                          <div class="card">
                             <!--Imagen-->
                             <div class="view overlay hm-white-slight hm-zoom hoverable">
-                                <img src="imagenes/iconoUniservice.png" class="img-fluid" alt="">
-                                <a href="#">
+                                <img src="imagenes/categorias.jpg" class="img-fluid" alt="">
+                                <a href="admin/subcategorias.php">
                                     <div class="mask waves-effect waves-light"></div>
                                 </a>
                             </div>
 
-                            <!--Contenido-->
+                            <!--Subcategorias-->
                             <div class="card-body">
                                 <p class="cantidadRegistros">Total Registros: 34</p>
                                 <p class="card-text text-truncate">Mantenimientos de los clientes.</p>
                                 <h5 class="card-title">Realizacion de todas las operaciones que se pueden realizar en un sistema</h5>
-                                <a href="#" class="botonNaranja">Ir al curso</a>
+                                <a href="admin/subcategorias.php" class="botonNaranja">Ir al curso</a>
                             </div>
                         </div>
                     </div> 
