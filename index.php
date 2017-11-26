@@ -1,3 +1,10 @@
+<?php
+session_start();
+include 'admin/conexion.php';
+
+if(isset($_SESSION['user'])) {
+        ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -187,7 +194,7 @@
                                 <p class="cantidadRegistros">Total Registros: 34</p>
                                 <p class="card-text text-truncate">Mantenimientos de los clientes.</p>
                                 <h5 class="card-title">Realizacion de todas las operaciones que se pueden realizar en un sistema</h5>
-                                <a href="admin/subcategorias.php" class="botonNaranja">Ir al curso</a>
+                                <a href="admin/subcategorias.php" class="botonNaranja">Ir a la Pagina</a>
                             </div>
                         </div>
                     </div> 
@@ -200,3 +207,10 @@
  ?>
 </body>
 </html>
+<?php
+     }
+     else{
+        echo '<script> alert("No Tienes los permisos para acceder a esta pagina.");</script>';
+         echo '<script> window.location="login.php"; </script>';
+     }
+?>

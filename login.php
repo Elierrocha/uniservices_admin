@@ -11,17 +11,17 @@
  <div class="container">
      <div class="col-md-6 card" style="margin-top: 10%; margin-left: 25%; ">
          <div style="text-align: center; padding: 10px;">
-          <img src="imagenes/seguridad.png" alt="logo Uniservices"> 
+          <img class="img img-responsive" src="imagenes/logouniservicios.png" alt="logo Uniservices"> 
          </div>
-        <form class="form-signin">
+        <form class="form-signin" action="includes/validarLogin.php" method="post">
           <h2 class="form-signin-heading" style="text-align: center;">Inicio de Sesion</h2> <br>
-          <label for="inputEmail" class="sr-only">Usuario</label>
-          <input type="email" id="inputEmail" class="form-control" placeholder="Usuario" required autofocus> <br>
-          <label for="inputPassword" class="sr-only">Password</label>
-          <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+          <label for="Usuario" class="sr-only">Usuario</label>
+          <input type="text" id="username" name="username" class="form-control" placeholder="Usuario" required='true' autofocus> <br>
+          <label for="Password" class="sr-only">Password</label>
+          <input type="password" id="pass" name="pass" class="form-control" placeholder="Contraseña" required='true'>
           <div class="checkbox">
             <label>
-              <input type="checkbox" value="remember-me"> Recordarme
+              <input type="checkbox" value="recordarme">Recordarme
             </label>
           </div>
           <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button> <br>
